@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'SF Pro bold';
-    src: url('fonts/SF-Pro-Display-Bold.otf');
+    src: url('fonts/SF-Pro-Text-Bold.otf');
 }
 
 * {
@@ -53,6 +53,7 @@ footer {
 .left-title h1 {
     font-family: 'SF Pro bold';
     font-style: normal;
+    font-weight: 700;
     font-size: 48px;
     line-height: 57px;
     letter-spacing: 0.005em;
