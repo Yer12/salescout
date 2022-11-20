@@ -152,7 +152,7 @@ footer {
     }
     .left-img {
         margin: 0 auto;
-        width: auto !important;
+        width: 260px !important;
         height: 440px; !important;
     }
     .left .btn {
