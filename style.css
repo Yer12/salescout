@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'SF Pro';
+    scroll-behavior: smooth;
 }
 header {
     width: 100%;
@@ -151,7 +152,7 @@ footer {
     }
     .left-img {
         margin: 0 auto;
-        width: 300px !important;
+        width: auto !important;
         height: 440px; !important;
     }
     .left .btn {
@@ -188,7 +189,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-decoration: none;
     
     font-style: normal;
     font-weight: 274;
