@@ -152,7 +152,7 @@ footer {
     }
     .left-img {
         margin: 0 auto;
-        width: 260px !important;
+        width: auto !important;
         height: 440px; !important;
     }
     .left .btn {
@@ -164,7 +164,7 @@ footer {
 @media (max-width: 399.98px) {
     .left-img {
         margin: 0 auto;
-        width: auto !important;
+        width: 260px !important;
     }
     .left .btn {
         font-siz1e: 14px;
