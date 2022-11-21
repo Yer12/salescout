@@ -7,6 +7,11 @@
     font-family: 'SF Pro bold';
     src: url('fonts/SF-Pro-Text-Bold.otf');
 }
+@font-face {
+    font-family: 'SF Pro bolder';
+    src: url('fonts/SF-Pro-Text-Semibold.otf');
+}
+
 
 * {
     margin: 0;
@@ -23,6 +28,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 80px;
+    position: fixed;
+    top: 0;
 }
 footer {
     background-color: #000;
@@ -34,7 +41,52 @@ footer {
     align-items: center;
 }
 .hero {
-    height: 80vh;
+    height: 100vh;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+.whatsapp-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(259.99deg, #43D654 98.95%, #FFFFFF 102.96%, #43D654 105.47%, #43D654 120.86%);
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+.whatsapp-mobile:after {
+    content:'';
+    top:0;
+    width:100%;
+    height:220px;
+    position: absolute;
+    z-index:10;
+    animation: slide 1s infinite 6s;
+
+    /*
+    CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
+    */
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+/* animation */
+
+@keyframes slide {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
 }
 .hero .container {
     display: flex;
@@ -92,7 +144,7 @@ footer {
     margin-top: 40px;
 }
 .right {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -105,7 +157,7 @@ footer {
     .hero {
         height: auto;
         padding-bottom: 50px;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     .hero .container {
         flex-direction: column;
@@ -136,7 +188,6 @@ footer {
 @media (max-width: 575.98px) {
     .hero {
         padding-bottom: 20px;
-        padding-top: 20px;
     }
     .left {
         align-items: flex-start !important;
@@ -161,8 +212,19 @@ footer {
         font-size: 18px;
         margin-top: 10px;
     }
+    .whatsapp {
+        display: none;
+    }
+    .whatsapp-mobile {
+        display: flex;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'SF Pro bolder';
+    }
 }
 @media (max-width: 399.98px) {
+    .hero {
+    }
     .left-img {
         margin: 0 auto;
         width: 260px !important;
@@ -172,10 +234,6 @@ footer {
     }
 }
 
-
-@media (max-width: 767.98px) {
-
-}
 
 @media (max-width: 1199.98px) {
 
@@ -205,26 +263,28 @@ footer {
 .works-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 100px;
 }
 .works-content_card {  
-    padding: 29px 23px;
-    background: #F5F5F5;
+    padding: 35px 23px;
     border-radius: 20px;
     width: 610px;
-    
+    background-image: url("img/telegaBg.png");
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
-    color: #000000;
+    color: #fff;
 }
 .works-content_bot {
-    width: 450px;
+    width: 470px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     background-image: url("img/img bot.svg");
+    background-size: 120px;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
@@ -325,6 +385,7 @@ footer {
 .start-cards {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 600px;
     margin: 60px auto 0;
@@ -334,6 +395,15 @@ footer {
     width: 100%;
     height: 90px;
     margin-bottom: 20px;
+    position: relative;
+}
+.hr {
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    height: 40px;
+    width: 1px;
+    background: #007BFE;
 }
 .start-card_number {
     background: #007BFE;
@@ -380,6 +450,11 @@ footer {
     .start-card_number {
         width: 60px;
         height: 60px;
+        z-index: 3;
+    }
+    .hr {
+        height: 60px;
+        left: 30px;
     }
 }
 @media (max-width: 767.98px) {
@@ -393,7 +468,25 @@ footer {
     .start-card_content {
         width: calc(100% - 70px);
     }
+    .hr {
+        height: 80px;
+        left: 25px;
+    }
 }
+@media (max-width: 575.98px) {
+    .start {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .start-cards {
+        margin-top: 20px;
+    }
+    .hr {
+        height: 100%;
+        left: 25px;
+    }
+}
+
 
 
 /* REASONS*/
@@ -404,6 +497,9 @@ footer {
     display: flex;
     margin-top: 60px;
     justify-content: space-between;
+}
+.reason-cards.mobile {
+    display: none;
 }
 .reason-card {
     width: 285px;
@@ -471,16 +567,45 @@ footer {
     }
 }
 @media (max-width: 575.98px) {
+    .reason {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .reason-card_header img {
         width: 45px;
     }
+    .swiper-slide {
+        width: 315px !important;
+        min-height: 144px !important;
+        display: flex;
+        align-items: center;
+    }
+    .swiper-slide:first-child {
+        margin-left: 20px;
+    }
     .reason-card {
         width: 100%;
-        height: auto;
-        padding: 20px;
+        padding: 10px;
     }
     .reason-card_text {
         font-size: 19px;
         line-height: 22px;
+        margin-top: 0;
+    }
+    .reason-card_text p:first-child {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 4px;
+    }
+    .reason-card_text p:last-child{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .reason-cards {
+        display: none;
+    }
+    .reason-cards.mobile {
+        margin-top: 20px;
+        display: flex;
     }
 }
