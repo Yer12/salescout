@@ -14,7 +14,27 @@
 </head>
 <body>
     <header>
-        <h1>HEADER</h1>
+        <div class="container">
+            <div class="logo">
+                <a href="#">SaleScout</a>
+            </div>
+            <div class="burger">
+                <img src="img/burger.svg" alt="">
+            </div>
+            <div class="menu">
+                <div class="menu-list">
+                    <a href="#works" class="menu-list_item">Как это работает </a>
+                    <a href="#start" class="menu-list_item">Как начать </a>
+                    <a href="" class="menu-list_item">Что умеет</a>
+                    <a href="" class="menu-list_item">Результаты клиентов</a>
+                    <a href="#reason" class="menu-list_item">Причины</a>
+                    <a href="" class="menu-list_item">Тарифы</a>
+                    <a href="" class="menu-list_item">Отзывы</a>
+                    <a href="" class="menu-list_item">FAQ</a>
+                </div>
+            </div>
+            
+        </div>
     </header>
     <section class="hero">
         <div class="container">
@@ -47,18 +67,17 @@
         <a href="#" class="whatsapp">
             <img src="img/whatsapp-icon.svg" alt="To WhatsApp">
         </a>
-        <a href="#" class="whatsapp-mobile">
+        <a href="#" id="whatsapp" class="whatsapp-mobile">
             Написать на WhatsApp
         </a>
+        <button id="toWorks" class="works-btn">
+            Как это работает
+            <img src="img/To-Down.svg" alt="">
+        </button>
     </section>
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
-            <a href="#works" class="works-btn">
-                Как это работает
-                <img src="img/To-Down.svg" alt="">
-            </a>
-
-            <div id="works" class="works-content">
+            <div class="works-content">
                 <div class="works-content_card">
                     Бот каждые <b>3 минуты</b> заходит на каспи и проверяет каждый <b>ваш товар</b>. <br><br>
                     Если ваш магазин не первый в списке продавцов, то бот смотрит на
@@ -79,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section class="start">
+    <section id="start" class="start">
         <h1 class="section-title">
             Как начать
         </h1>
@@ -129,7 +148,7 @@
             </div>
         </div>
     </section>
-    <section class="reason">
+    <section id="reason" class="reason">
         <div class="container">
             <h1 class="section-title">Вот почему продаж мало</h1>
             <div class="reason-cards">
@@ -224,7 +243,7 @@
             </div>
         </div>
     </section>
-    <section class="orders reason">
+    <section id="orders" class="orders reason">
         <div class="container">
             <h1 class="section-title">Увеличьте заказы в 2 раза за счет</h1>
             <div class="reason-cards">
@@ -326,7 +345,22 @@
         </div>
     </section>
     <footer>
-        <h1>FOOTER</h1>
+        <div class="footer-container">
+            <p class="footer-title">© SaleScout.me 2022</p>
+            <p class="footer-subtitle">Сделано продавцами для продавцов</p>
+            <a class="footer-rules" href="#">Правила использования</a>
+            <div class="footer-partners">
+                <div class="footer-partner_item">
+                    <img src="img/cloud.svg" alt="Cloud Payments">
+                </div>
+                <div class="footer-partner_item">
+                    <img src="img/visa.svg" alt="Visa">
+                </div>
+                <div class="footer-partner_item">
+                    <img src="img/master.svg" alt="Master Card">
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

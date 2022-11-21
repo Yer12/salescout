@@ -24,24 +24,77 @@ header {
     width: 100%;
     background-color: #FFFFFF;
     border-bottom: 1px solid #D7D7D7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 80px;
     position: fixed;
     top: 0;
+    z-index: 99;
 }
-footer {
-    background-color: #000;
-    height: 306px;
-    width: 100%;
-    color: #FFFFFF;
+header .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
+.logo {
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+}
+.menu-list {
+    display: flex;
+}
+.menu-list_item {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+    .burger {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        position: fixed;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+        position: fixed;
+        height: calc(100vh - 80px);
+        left: 0;
+        width: 100%;
+        top: 80px;
+        background: #FFFFFF;
+    }
+    .menu-list {
+        margin-left: 50px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .menu-list_item {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}
+
 .hero {
     height: 100vh;
+    position: relative;
 }
 .whatsapp {
     position: fixed;
@@ -152,7 +205,7 @@ footer {
 @media (max-width: 991.98px) {
     .hero {
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
         padding-top: 100px;
     }
     .hero .container {
@@ -183,10 +236,11 @@ footer {
 }
 @media (max-width: 575.98px) {
     .hero {
-        padding-bottom: 20px;
+        padding-bottom: 130px;
     }
     .left {
-        align-items: flex-start !important;
+        align-items: center;
+        text-align: center;
     }
     .left-title h1 {
         font-size: 28px;
@@ -208,11 +262,15 @@ footer {
         font-size: 18px;
         margin-top: 10px;
     }
+
+    .logo a {
+        font-size: 19px;
+        line-height: 19px;
+    }
     .whatsapp {
         display: none;
     }
     .whatsapp-mobile {
-        display: flex;
         font-size: 18px;
         line-height: 21px;
         font-family: 'SF Pro bolder';
@@ -231,16 +289,19 @@ footer {
 }
 
 
-@media (max-width: 1199.98px) {
-
-}
 
 /* WORKS */
 .works {
     height: 70vh;
-    margin-top: -100px;
+    padding-top: 100px;
 }
 .works-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    transform:translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +321,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
 }
 .works-content_card {  
     padding: 35px 23px;
@@ -312,6 +372,7 @@ footer {
         height: auto;
         padding-bottom: 50px;
         margin-top: 0;
+        padding-top: 90px;
     }
     .works-content {
         flex-direction: column;
@@ -327,6 +388,7 @@ footer {
     }
 }
 @media (max-width: 767.98px) {
+
     .works-content {
         flex-direction: column;
         justify-content: center;
@@ -334,8 +396,11 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+    .works {
+        padding-top: 0px;
+    }
     .works-content {
-        margin-top: 50px;
+
     }
     .works-content_bot {
         width: 100%;
@@ -477,9 +542,13 @@ footer {
     .start-cards {
         margin-top: 20px;
     }
+    .start-card_number {
+        width: 64px;
+        height: 74px;
+    }
     .hr {
         height: 100%;
-        left: 25px;
+        left: 30px;
     }
 }
 
@@ -603,5 +672,67 @@ footer {
     .reason-cards.mobile {
         margin-top: 20px;
         display: flex;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    height: 306px;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    text-align: center;
+}
+.footer-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 33px;
+}
+.footer-subtitle, .footer-rules {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.footer-rules {
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-partners {
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+}
+.footer-partner_item {
+    margin-right: 30px;
+}
+.footer-partner_item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 575.98px) {
+    footer {
+        padding-top: 30px;
+    }
+    .footer-title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    .footer-subtitle, .footer-rules {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .footer-partners {
+        margin-top: 24px;
     }
 }
