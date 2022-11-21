@@ -60,34 +60,30 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 9;
-}
-.whatsapp-mobile:after {
-    content:'';
-    top:0;
-    width:100%;
-    height:220px;
-    position: absolute;
-    z-index:10;
-    animation: slide 1s infinite 6s;
 
-    /*
-    CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
-    */
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+    background: linear-gradient(
+            135deg,
+            rgba(67, 214, 84, 1) 0%,
+            rgba(67, 214, 84, 1) 40%,
+            white 50%,
+            rgba(67, 214, 84, 1) 60%,
+            rgba(67, 214, 84, 1) 100%
+    );
+    background-size: 400% 100%;
+    background-position: 100% 50%;
+    animation: animation-shine 2s 0s infinite;
 }
 
 /* animation */
-
-@keyframes slide {
-    0% {transform:translateX(-100%);}
-    100% {transform:translateX(100%);}
+@keyframes animation-shine {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
+
 .hero .container {
     display: flex;
     justify-content: space-between;
