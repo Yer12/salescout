@@ -1,31 +1,26 @@
-
 const toWorksBtn = document.getElementById('toWorks');
 const menuBtn = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const whatsAppMobile = document.getElementById('whatsapp');
 
-let scrollHeight = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-);
-console.log(scrollHeight)
 const mobile = window.matchMedia("(max-width: 575.98px)");
+if(mobile.matches) {
+    whatsAppMobile.style.display = "flex";
+}
 
 window.addEventListener("scroll", () => {
     if(mobile.matches) {
-        if(window.scrollY > 550 && window.scrollY < 1900) {
+        console.log(window.scrollY)
+        if (window.scrollY > 700) {
             console.log(window.scrollY)
-            whatsAppMobile.style.display = "flex";
+            whatsAppMobile.style.display = "none";
         }
         else {
-            whatsAppMobile.style.display = "none";
+            whatsAppMobile.style.display = "flex";
+
         }
     }
 });
-if(mobile.matches) {
-    console.log('whatsapp fixed')
-}
 
 menuBtn.addEventListener('click', function(){
     console.log('clicked')
@@ -45,7 +40,7 @@ menuItem.forEach((m) => {
 toWorksBtn.addEventListener("click", ()=> {
     const mobile = window.matchMedia("(max-width: 700px)");
     if(mobile.matches) {
-        window.scrollTo(0,  750)
+        window.scrollTo(0,  730)
     }
     else {
         window.scrollTo(0,  850)
@@ -55,6 +50,7 @@ toWorksBtn.addEventListener("click", ()=> {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 10,
+    autoplay: true,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -68,6 +64,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper1", {
     slidesPerView: "auto",
     spaceBetween: 10,
+    autoplay: true,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
