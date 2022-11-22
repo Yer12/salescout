@@ -4,14 +4,11 @@ const menu = document.querySelector('.menu');
 const whatsAppMobile = document.getElementById('whatsapp');
 
 const mobile = window.matchMedia("(max-width: 575.98px)");
-if(mobile.matches) {
-    whatsAppMobile.style.display = "flex";
-}
 
 window.addEventListener("scroll", () => {
     if(mobile.matches) {
         console.log(window.scrollY)
-        if (window.scrollY > 700) {
+        if (window.scrollY < 250) {
             console.log(window.scrollY)
             whatsAppMobile.style.display = "none";
         }
