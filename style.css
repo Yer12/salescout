@@ -268,13 +268,14 @@ header .container {
     }
     .left-img {
         margin: 0 auto;
-        width: 213px !important;
-        height: 386px !important;
+        width: 193px !important;
+        height: 345px !important;
     }
     .left .btn {
         width: 100%;
         font-size: 18px;
-        margin-top: 20px;
+        margin-top: 10px;
+        height: 50px;
     }
 
     .logo a {
