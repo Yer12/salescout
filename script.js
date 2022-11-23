@@ -2,19 +2,44 @@ const toWorksBtn = document.getElementById('toWorks');
 const menuBtn = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const whatsAppMobile = document.getElementById('whatsapp');
+const speed = document.querySelector('#speed');
+const prices = document.querySelectorAll('.tariffs-content_block-footer_price-span');
+const speedInput = document.querySelector('#speedInput');
 
+prices.forEach((p) => {
+    console.log( );
+    p.value = +p.value * 2;
+})
 const mobile = window.matchMedia("(max-width: 575.98px)");
+speedInput.addEventListener('click', ()=> {
+    if(speedInput.checked === true) {
+        console.log(speedInput.checked )
+
+        prices.forEach((p) => {
+            console.log(p.innerText * 2)
+            p.innerText = 2 * parseInt(p.innerHTML.replace(' ', ''));
+        })
+    }
+    else {
+        prices.forEach((p) => {
+            console.log(p.innerText / 2)
+            p.innerText = Number(p.innerText) / 2;
+        })
+    }
+})
 
 window.addEventListener("scroll", () => {
     if(mobile.matches) {
-        // console.log(window.scrollY)
         if (window.scrollY < 250) {
             // console.log(window.scrollY)
             whatsAppMobile.style.display = "none";
         }
+        else if (window.scrollY > 2860) {
+            speed.classList.add('fixed');
+        }
         else {
             whatsAppMobile.style.display = "flex";
-
+            speed.classList.remove('fixed');
         }
     }
 });
@@ -70,3 +95,21 @@ var swiper = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+document.querySelectorAll('.tariffs-tabs_item')[0].classList.add('active');
+document.getElementById("tab1").style.display = "flex";
+const openTabs = (event, tab) => {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tariffs-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        // console.log(tabcontent[i])
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tariffs-tabs_item");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tab).style.display = "flex";
+    event.currentTarget.className += " active";
+}
+

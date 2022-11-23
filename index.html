@@ -344,6 +344,728 @@
             </div>
         </div>
     </section>
+    <section class="tariffs">
+        <div class="container">
+            <h1 class="section-title">Наши тарифы</h1>
+            <div class="tariffs-header">
+                <div class="tariffs-tabs">
+                    <div class="tariffs-tabs_item" onclick="openTabs(event, 'tab1')">Месяц</div>
+                    <div class="tariffs-tabs_item" onclick="openTabs(event, 'tab2')">6 Месяцев</div>
+                    <div class="tariffs-tabs_item" onclick="openTabs(event, 'tab3')">12 Месяцев</div>
+                </div>
+                <div id="speed" class="tariffs-speed">
+                    Cкорость х2
+                    <label class="switch">
+                        <input id="speedInput" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="tab1" class="tariffs-content">
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">tab1</div>
+                    <div class="tariffs-content_block-container">
+                        <p class="tariffs-content_block-item">Минимальная цена</p>
+                        <p class="tariffs-content_block-item">Максимальная цена</p>
+                        <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                        <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                        <p class="tariffs-content_block-item">Снять с продажи</p>
+                        <p class="tariffs-content_block-item">Выставить на продажу</p>
+                        <p class="tariffs-content_block-item">Автообновление по складам</p>
+                        <p class="tariffs-content_block-item">Остатки по складам</p>
+                        <p class="tariffs-content_block-item">Все города Казахстана</p>
+                        <p class="tariffs-content_block-item">Количество активных товаров</p>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">13 000</span>₸  </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">13 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">
+                        <img src="img/fire.svg" alt="">
+                        Бизнес 
+                    </div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">13 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">13 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tariffs-content">
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">tab2</div>
+                    <div class="tariffs-content_block-container">
+                        <p class="tariffs-content_block-item">Минимальная цена</p>
+                        <p class="tariffs-content_block-item">Максимальная цена</p>
+                        <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                        <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                        <p class="tariffs-content_block-item">Снять с продажи</p>
+                        <p class="tariffs-content_block-item">Выставить на продажу</p>
+                        <p class="tariffs-content_block-item">Автообновление по складам</p>
+                        <p class="tariffs-content_block-item">Остатки по складам</p>
+                        <p class="tariffs-content_block-item">Все города Казахстана</p>
+                        <p class="tariffs-content_block-item">Количество активных товаров</p>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">23 000</span>₸  </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price">
+                            <span class="tariffs-content_block-footer_price-span">33 000</span>₸
+                        </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">
+                        <img src="img/fire.svg" alt="">
+                        Бизнес
+                    </div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price">
+                            <span class="tariffs-content_block-footer_price-span">43 000</span>₸
+                        </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price">
+                            <span class="tariffs-content_block-footer_price-span">53 000</span>₸
+                        </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tariffs-content">
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">tab3</div>
+                    <div class="tariffs-content_block-container">
+                        <p class="tariffs-content_block-item">Минимальная цена</p>
+                        <p class="tariffs-content_block-item">Максимальная цена</p>
+                        <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                        <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                        <p class="tariffs-content_block-item">Снять с продажи</p>
+                        <p class="tariffs-content_block-item">Выставить на продажу</p>
+                        <p class="tariffs-content_block-item">Автообновление по складам</p>
+                        <p class="tariffs-content_block-item">Остатки по складам</p>
+                        <p class="tariffs-content_block-item">Все города Казахстана</p>
+                        <p class="tariffs-content_block-item">Количество активных товаров</p>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">43 000</span>₸  </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">50 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">
+                        <img src="img/fire.svg" alt="">
+                        Бизнес
+                    </div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price"><span class="tariffs-content_block-footer_price-span">59 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+                <div class="tariffs-content_block">
+                    <div class="tariffs-content_block-header">Мини</div>
+                    <div class="tariffs-content_block-container">
+                        <div class="tariffs-content_block-container--mobile">
+                            <p class="tariffs-content_block-item">Минимальная цена</p>
+                            <p class="tariffs-content_block-item">Максимальная цена</p>
+                            <p class="tariffs-content_block-item">Обновлять каждые 7 дней</p>
+                            <p class="tariffs-content_block-item">Цена опустилась ниже минимальной</p>
+                            <p class="tariffs-content_block-item">Снять с продажи</p>
+                            <p class="tariffs-content_block-item">Выставить на продажу</p>
+                            <p class="tariffs-content_block-item">Автообновление по складам</p>
+                            <p class="tariffs-content_block-item">Остатки по складам</p>
+                            <p class="tariffs-content_block-item">Все города Казахстана</p>
+                            <p class="tariffs-content_block-item">Количество активных товаров</p>
+                        </div>
+                        <div class="tariffs-content_block-container-div">
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                <img src="img/checked.svg" alt="">
+                            </div>
+                            <div class="tariffs-content_block-item">
+                                < 30 товаров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs-content_block-footer">
+                        <p class="tariffs-content_block-footer_price">
+                            <span class="tariffs-content_block-footer_price-span">63 000</span>₸ </p>
+                        <div class="tariffs-content_block-footer_btn btn">Попробовать</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-container">
             <p class="footer-title">© SaleScout.me 2022</p>
