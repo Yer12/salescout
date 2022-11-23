@@ -408,7 +408,7 @@ header .container {
 
 @media (max-width: 575.98px) {
     .works {
-        padding-top: 0px;
+        padding-top: 40px;
     }
     .works-btn {
         bottom: 0;
@@ -644,8 +644,8 @@ header .container {
 }
 @media (max-width: 575.98px) {
     .reason {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .reason-card_header img {
         width: 45px;

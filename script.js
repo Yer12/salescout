@@ -36,7 +36,7 @@ menuItem.forEach((m) => {
 toWorksBtn.addEventListener("click", ()=> {
     const mobile = window.matchMedia("(max-width: 700px)");
     if(mobile.matches) {
-        window.scrollTo(0,  630)
+        window.scrollTo(0,  670)
     }
     else {
         window.scrollTo(0,  850)
