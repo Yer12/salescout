@@ -95,17 +95,23 @@ var swiper = new Swiper(".mySwiper1", {
         prevEl: ".swiper-button-prev",
     },
 });
+const tabcontent = document.getElementsByClassName("tariffs-content");
+const tablinks = document.getElementsByClassName("tariffs-tabs_item");
+
+for (i = 0; i < tabcontent.length; i++) {
+    // console.log(tabcontent[i])
+    tabcontent[i].style.display = "none";
+}
 
 document.querySelectorAll('.tariffs-tabs_item')[0].classList.add('active');
 document.getElementById("tab1").style.display = "flex";
 const openTabs = (event, tab) => {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tariffs-content");
+
     for (i = 0; i < tabcontent.length; i++) {
         // console.log(tabcontent[i])
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tariffs-tabs_item");
+
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
