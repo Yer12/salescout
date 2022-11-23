@@ -42,6 +42,11 @@
   cursor: pointer;
   outline: #007BFE;
 }
+.btn:hover {
+    content: "";
+    background: #0160c7;
+    /*transition: all 0.8s*/
+}
 .section-title {
     font-family: 'SF Pro';
     font-style: normal;

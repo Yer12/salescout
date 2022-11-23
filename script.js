@@ -7,9 +7,9 @@ const mobile = window.matchMedia("(max-width: 575.98px)");
 
 window.addEventListener("scroll", () => {
     if(mobile.matches) {
-        console.log(window.scrollY)
+        // console.log(window.scrollY)
         if (window.scrollY < 250) {
-            console.log(window.scrollY)
+            // console.log(window.scrollY)
             whatsAppMobile.style.display = "none";
         }
         else {
@@ -20,7 +20,6 @@ window.addEventListener("scroll", () => {
 });
 
 menuBtn.addEventListener('click', function(){
-    console.log('clicked')
     document.body.style.overflow = document.body.style.overflow ? null : 'hidden';
     menu.classList.toggle('active');
 })
