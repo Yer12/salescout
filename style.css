@@ -303,8 +303,8 @@ header .container {
 /* WORKS */
 .works {
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: 90px;
 }
 .works-btn {
     position: absolute;
@@ -451,7 +451,7 @@ header .container {
 /* START*/
 .start {
     background: #F4F7FA;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
 .start-cards {
@@ -567,7 +567,7 @@ header .container {
 
 /* REASONS*/
 .reason {
-    padding: 60px 0;
+    padding: 100px 0;
 }
 .reason-cards {
     display: flex;
