@@ -4,26 +4,32 @@ const menu = document.querySelector('.menu');
 const whatsAppMobile = document.getElementById('whatsapp');
 const speed = document.querySelector('#speed');
 const prices = document.querySelectorAll('.tariffs-content_block-footer_price-span');
+const oldPrice = document.querySelectorAll('.tariffs-content_block-footer_price-old');
+const oldPrices = document.querySelectorAll('.tariffs-content_block-footer_price-old-span')
 const speedInput = document.querySelector('#speedInput');
 
-prices.forEach((p) => {
-    console.log( );
-    p.value = +p.value * 2;
+
+const numberPrettier = (value) => {
+    return value?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') || null;
+};
+
+oldPrice.forEach((op) => {
+    op.classList.add('dn');
 })
 const mobile = window.matchMedia("(max-width: 575.98px)");
 speedInput.addEventListener('click', ()=> {
     if(speedInput.checked === true) {
-        console.log(speedInput.checked )
 
-        prices.forEach((p) => {
-            console.log(p.innerText * 2)
-            p.innerText = 2 * parseInt(p.innerHTML.replace(' ', ''));
+        prices.forEach((p,idx) => {
+            oldPrice[idx].classList.remove('dn');
+            oldPrices[idx].innerHTML = p.innerText;
+            p.innerText = numberPrettier(2 * parseInt(p.innerHTML.replace(' ', '')));
         })
     }
     else {
-        prices.forEach((p) => {
-            console.log(p.innerText / 2)
-            p.innerText = Number(p.innerText) / 2;
+        prices.forEach((p, idx) => {
+            oldPrice[idx].classList.add('dn');
+            p.innerText = parseInt(p.innerHTML.replace(' ', '')) / 2;
         })
     }
 })
@@ -118,4 +124,5 @@ const openTabs = (event, tab) => {
     document.getElementById(tab).style.display = "flex";
     event.currentTarget.className += " active";
 }
+
 

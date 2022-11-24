@@ -877,9 +877,19 @@ footer {
 }
 .tariffs-content_block-footer_price, .tariffs-content_block-footer_price-span {
     color: #007BFE;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 45px;
     font-family: 'SF Pro bolder';
+}
+.tariffs-content_block-footer_price-old {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #838383;
+}
+.tariffs-content_block-footer_price-old.dn {
+    display: none;
 }
 .tariffs-content_block-footer_btn {
     width: 191px;
