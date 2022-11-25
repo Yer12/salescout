@@ -135,15 +135,10 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
-            panel.style.padding = "0px";
-            this.style.marginBottom = "20px";
-            this.style.borderRadius = "10px";
-
+            // panel.classList.remove('active');
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            this.style.marginBottom = "0px";
-            this.style.borderRadius = "10px 10px 0 0";
-            panel.style.padding = "30px 0 30px 20px";
+            // panel.classList.add('active');
         }
     });
 }
