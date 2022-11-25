@@ -806,7 +806,7 @@ footer {
     border-radius: 10px;
 }
 .tariffs-content_block {
-    width: calc((100% - 262px)/4);
+    width: calc((100% - 262px)/3);
     padding-bottom: 16px;
     border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -814,11 +814,11 @@ footer {
     border-bottom-left-radius: 10px;
     width: 262px;
 }
-.tariffs-content_block:nth-child(4) .tariffs-content_block-header {
+.tariffs-content_block:nth-child(3) .tariffs-content_block-header {
     background-image: url("img/lenta.svg");
-    background-position: 120px -27px;
+    background-position: 143px -40px;
     background-repeat: no-repeat;
-    background-size: 130px;
+    background-size: 194px;
 }
 .tariffs-content_block-header {
     height: 183px;
@@ -894,7 +894,9 @@ footer {
 .tariffs-content_block-footer_btn {
     width: 191px;
     height: 55px;
+    margin: 0 auto;
     margin-top: 10px;
+
 }
 
 @media (max-width: 1199.98px) {
@@ -906,11 +908,11 @@ footer {
     .tariffs-content_block-footer_price {
         font-size: 28px;
     }
-    .tariffs-content_block:nth-child(4) .tariffs-content_block-header {
+    .tariffs-content_block:nth-child(3) .tariffs-content_block-header {
         background-image: url("img/lenta.svg");
-        background-position: 65px -27px;
+        background-position: 115px -27px;
         background-repeat: no-repeat;
-        background-size: 130px;
+        background-size: 139px;
     }
     .tariffs-content_block-footer_price, .tariffs-content_block-footer_price-span {
         font-size: 28px !important;
@@ -976,13 +978,13 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-    .tariffs-content_block:nth-child(4) .tariffs-content_block-header {
+    .tariffs-content_block:nth-child(3) .tariffs-content_block-header {
         background-image: none;
     }
     .tariffs-content_block-header {
         background: transparent;
     }
-    .tariffs-content_block:nth-child(4) {
+    .tariffs-content_block:nth-child(3) {
         background-image: url("img/lenta.svg");
         background-position: top -30px right -27px;
         background-repeat: no-repeat;
@@ -1099,7 +1101,7 @@ input:checked + .slider:before {
 
 
 .questions {
-
+    padding-top: 60px;
 }
 .questions-content {
     width: 100%;
