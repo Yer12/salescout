@@ -37,7 +37,6 @@ speedInput.addEventListener('click', ()=> {
 window.addEventListener("scroll", () => {
     if(mobile.matches) {
         if (window.scrollY < 250) {
-            // console.log(window.scrollY)
             whatsAppMobile.style.display = "none";
         }
         else if (window.scrollY > 2860) {
@@ -105,7 +104,6 @@ const tabcontent = document.getElementsByClassName("tariffs-content");
 const tablinks = document.getElementsByClassName("tariffs-tabs_item");
 
 for (i = 0; i < tabcontent.length; i++) {
-    // console.log(tabcontent[i])
     tabcontent[i].style.display = "none";
 }
 
@@ -114,7 +112,6 @@ document.getElementById("tab1").style.display = "flex";
 const openTabs = (event, tab) => {
 
     for (i = 0; i < tabcontent.length; i++) {
-        // console.log(tabcontent[i])
         tabcontent[i].style.display = "none";
     }
 
@@ -135,10 +132,8 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
-            // panel.classList.remove('active');
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            // panel.classList.add('active');
         }
     });
 }
