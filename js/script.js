@@ -29,7 +29,7 @@ speedInput.addEventListener('click', ()=> {
     else {
         prices.forEach((p, idx) => {
             oldPrice[idx].classList.add('dn');
-            p.innerText = parseInt(p.innerHTML.replace(' ', '')) / 2;
+            p.innerText = numberPrettier(parseInt(p.innerHTML.replace(' ', '')) / 2);
         })
     }
 })
@@ -94,6 +94,20 @@ var swiper = new Swiper(".mySwiper1", {
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    autoplay: true,
+    pagination: {
+        el: ".swiper-pagination3",
+        type: "bullets",
     },
     navigation: {
         nextEl: ".swiper-button-next",
