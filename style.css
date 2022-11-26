@@ -123,7 +123,7 @@ header .container {
     height: 60px;
     justify-content: center;
     align-items: center;
-    z-index: 9;
+    z-index: 99;
 
     background: linear-gradient(
             135deg,
@@ -564,6 +564,291 @@ header .container {
 }
 
 
+/*DO*/
+
+.do {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.do-container {
+    margin-top: 55px;
+    padding-bottom: 60px;
+}
+.do-item {
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+.do-item_img {
+    width: 300px;
+    height: 200px;
+}
+.do-item_img-div {
+    height: 300px;
+}
+.do-item_img .do-item_img-div{
+}
+.do-item-1 {
+    margin-left: 50px;
+}
+.do-item-1 .do-item_img {
+    height: 396px;
+    background-size: contain;
+    background: url("img/doBg.svg") no-repeat right;
+}
+.do-item-2 {
+    justify-content: flex-end;
+}
+.do-item-2 .do-item_img {
+    width: 400px;
+}
+.do-item-2 .do-item_img-div {
+    height: 310px;
+    width: 405px;
+}
+.do-item-2 .do-item_img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    background-size: contain;
+    background: url("img/doBgFlip.svg") no-repeat left;
+}
+.do-item-2 .do-item_img-div {
+    background: url("img/tablet.svg") no-repeat;
+    background-size: contain;
+    position: relative;
+    border-radius: 15px;
+}
+.do-item-2 .do-item_img-div img{
+    position: absolute;
+    width: 369px;
+    border-radius: 8px;
+    height: 268px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+}
+.do-item-3 {
+}
+
+.do-item-3 .do-item_img {
+
+    width: 570px;
+    height: 300px;
+    background-size: contain;
+    background: url("img/doBg.svg") no-repeat right;
+    display: flex;
+    align-items: center;
+}
+.do-item-3 .do-item_img-div {
+    width: 100%;
+    background: url("img/macbook.svg") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.do-item-3 .do-item_img-div img{
+    position: absolute;
+    width: 399px;
+    height: 238px;
+    left: 50%;
+    top: 20px;
+    transform: translate(-55%, 0);
+}
+
+.do-item_text {
+    margin-left: -40px;
+}
+.do-item-2 .do-item_text {
+    margin-right: -40px;
+    z-index: 9;
+}
+.do-item_title {
+    font-family: 'SF Pro bolder';
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 33px;
+}
+.do-item_subtitle {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+@media (max-width: 991.98px) {
+    .do-item-1 {
+        margin-left: 0px;
+    }
+    .do-item-2 .do-item_img {
+        width: 373px;
+    }
+    .do-item-2 .do-item_img-div{
+        height: 234px;
+        width: 311px;
+    }
+    .do-item-2 .do-item_img-div img {
+        width: 283px;
+        height: 208px;
+        top: 15px;
+        transform: translate(-51%, 0);
+    }
+    .do-item-2 .do-item_img, .do-item-3 .do-item_img {
+        background-size: contain;
+    }
+    .do-item-2 .do-item_img-div img {
+
+    }
+    .do-item-3 .do-item_img {
+        width: 775px;
+        height: 245px;
+    }
+    .do-item-3 .do-item_img-div {
+        height: 100%;
+    }
+    .do-item-3 .do-item_img-div img {
+        position: absolute;
+        width: 324px;
+        height: 195px;
+        left: 50%;
+        top: 18px;
+        transform: translate(-51.5%, 0);
+    }
+
+    .do-item_subtitle {
+        font-size: 16px;
+        width: 280px;
+    }
+    .do-item_subtitle br{
+        display: none;
+    }
+    .do-item-2 .do-item_text {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .do-item {
+        margin-bottom: 20px;
+    }
+    .do-item_text {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .do-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .do-item .do-item_img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .do-item_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 377px !important;
+        background: url("img/domobileBg.png") no-repeat center !important;
+        background-size: contain !important;
+    }
+    .do-item_img-div {
+    }
+    .do-item_text {
+        text-align: center;
+    }
+    .do-item-2 {
+        flex-direction: column-reverse;
+    }
+    .do-item-2 .do-item_img {
+        height: 290px;
+    }
+    .do-item-2 .do-item_img-div {
+        margin: 0 auto;
+    }
+    .do-item_subtitle {
+        width: auto;
+    }
+    .do-item-3 .do-item_img {
+        height: 329px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .do-item-3 .do-item_img-div {
+        width: 340px;
+        height: 200px;
+    }
+    .do-item-3 .do-item_img-div img {
+        position: absolute;
+        width: 254px;
+        height: 152px;
+        left: 50%;
+        top: 15px;
+        transform: translate(-49.5%, 0);
+    }
+    .do-item_img {
+        margin-bottom: 20px;
+    }
+    .do-item_img-div {
+        height: auto;
+    }
+    .do-item-2 .do-item_img-div {
+        height: 203px;
+        width: 311px;
+        background-size: cover;
+    }
+    .do-item-2 .do-item_img-div img {
+        width: calc(100% - 15px);
+        height: calc(100% - 20px);
+        top: 10px;
+        transform: translate(-50.5%, 0);
+    }
+    .do-item_title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .do-item_subtitle {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 425.98px) {
+
+    .do-item_img-div {
+        width: 250px !important;
+    }
+    .do-item_img {
+        width: 250px !important;
+    }
+    .do-item-3 .do-item_img-div img {
+        width: 193px;
+        height: 115px;
+        top: 36px;
+    }
+    .do-item-3 .do-item_img-div {
+        background-position: center center;
+    }
+    .do-item-1 .do-item_img-div img {
+        width: 62%;
+    }
+}
+
+
+
+/*RESULTS*/
+
+.results {
+    background: #F4F7FA;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.results-content {
+
+}
+
+
+
 
 /* REASONS*/
 .reason {
@@ -795,6 +1080,7 @@ footer {
     display: flex;
     align-items: center;
     font-size: 18px;
+    z-index: 98;
     line-height: 21px;
     font-family: 'SF Pro';
 }
@@ -1009,7 +1295,7 @@ footer {
     .tariffs-speed.fixed {
         position: fixed;
         top:60px;
-        right: 25px;
+        padding-right: 25px;
         display: flex;
         align-items: center;
     }
