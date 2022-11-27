@@ -908,6 +908,113 @@ header .container {
     height: 156px;
 }
 
+
+/*.modal-img {*/
+/*    left:50%;*/
+/*    transform:translate(-50%,-50%);*/
+/*    position: absolute;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    background: rgba(51, 51, 51, 0.61);*/
+/*    height: 100%;*/
+/*    z-index: 999;*/
+/*}*/
+/*.modal-img-div {*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*}*/
+/*.modal-img-div img{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+.modal-target {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 900px;
+    aspect-ratio: auto;
+    opacity: 1 !important;
+    max-width: 1200px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 132px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
 @media (max-width: 1199.98px) {
     .results-hero_item-img {
         height: 310px;
@@ -922,6 +1029,9 @@ header .container {
     }
     .result-slider_item img {
         width: 90%;
+    }
+    .modal-content {
+        width: 700px;
     }
 }
 
@@ -938,6 +1048,17 @@ header .container {
     .result-slider .result-slider_item.swiper-slide {
         width: 300px !important;
         height: 211px;
+    }
+    .modal-content {
+        width: 500px;
+    }
+}
+@media (max-width: 575.98px) {
+    .modal {
+    }
+    .modal-content {
+        margin-left: 5px;
+        width: 98%;
     }
 }
 
@@ -1520,7 +1641,7 @@ input:checked + .slider:before {
     margin-top: -10px;
     background-color: white;
     max-height: 0;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -1535,7 +1656,6 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     padding: 34px 20px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
     margin-top: -10px;
