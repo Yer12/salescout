@@ -39,7 +39,7 @@ window.addEventListener("scroll", () => {
         if (window.scrollY < 250) {
             whatsAppMobile.style.display = "none";
         }
-        else if (window.scrollY > 2860) {
+        else if (window.scrollY > 6205 && window.scrollY < 8400) {
             speed.classList.add('fixed');
         }
         else {
