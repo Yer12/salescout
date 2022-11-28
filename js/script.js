@@ -175,6 +175,27 @@ document.addEventListener('click', function (e) {
         modalImg.src = img.src;
         captionText.innerHTML = img.alt;
     }
-    document.body.style.overflow = document.body.style.overflow ? null : 'hidden';
+    // document.body.style.overflow = document.body.style.overflow ? null : 'hidden';
 
+});
+
+var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() {
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+
+        anHttpRequest.open( "GET", aUrl, true );
+        anHttpRequest.send( null );
+    }
+}
+var client = new HttpClient();
+client.get('https://api.salescout.me/api/order/stats/', function(response) {
+    // do something with response
+    const resp = JSON.parse(response);
+    document.getElementById('order').innerText = resp.count;
+    document.getElementById('total').innerText = numberPrettier(resp.sum);
+    console.log(JSON.parse(response))
 });

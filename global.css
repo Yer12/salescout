@@ -57,9 +57,26 @@
     text-align: center;
 }
 
+.section-subtitle {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+.section-subtitle br {
+    display: none;
+}
 @media (max-width: 575.98px) {
     .section-title {
-        font-size: 34px;
+        font-size: 31px;
+    }
+    .section-subtitle {
+        font-size: 22px;
+        width: 100%;
+    }
+    .section-subtitle br {
+        display: block;
     }
 }
 
