@@ -116,8 +116,8 @@ header .container {
     right: 40px;
 }
 .whatsapp-alt {
-    padding: 20px 40px;
-    padding-left: 15px;
+    padding: 20px 40px 20px 15px;
+    margin-right: 10px;
     color: #FFFFFF;
     background-image: url("img/whatsappAlt.png");
     background-repeat: no-repeat;
